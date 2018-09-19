@@ -5,19 +5,15 @@
 <div class="row">
     <div class="col-md-12">
         <button id="lanuchWin32ProcessButton">Launch Win32 App if running on Windows 10</button>
+        <br />
+        <button id="registerBackgroundButton">Register background task</button>
+
+        <br/>
+        <span id="output">no output</span>
     </div>
 </div>
 
 @section Scripts {
-    <script type="text/javascript">
-        $(function () {
-            $('#lanuchWin32ProcessButton').click(function () {
-                if (window.Windows) {
-                    Windows.ApplicationModel.FullTrustProcessLauncher.launchFullTrustProcessForCurrentAppAsync();
-                } else {
-                    alert("I'm running on the browser.");
-                }
-            });
-        });
+    <script type="text/javascript" src="~/js/index.js">
     </script>
 }

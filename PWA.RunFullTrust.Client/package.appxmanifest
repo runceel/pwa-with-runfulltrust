@@ -28,11 +28,16 @@
       <Extensions>
         <desktop:Extension Category="windows.fullTrustProcess" Executable="Win32/PWA.RunFullTrust.WPFApp.exe">
         </desktop:Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="PWA.BackgroundTask.ExampleBackgroundTask">
+          <BackgroundTasks>
+            <Task Type="timer" />
+          </BackgroundTasks>
+        </Extension>
       </Extensions>
     </Application>
   </Applications>
   <Capabilities>
     <Capability Name="internetClient" />
-    <rescap:Capability Name="runFullTrust"/>
+    <rescap:Capability Name="runFullTrust" />
   </Capabilities>
 </Package>
