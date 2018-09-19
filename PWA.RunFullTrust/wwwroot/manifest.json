@@ -1,0 +1,16 @@
+{
+  "dir": "ltr",
+  "lang": "en-us",
+  "name": "My Sample PWA",
+  "scope": "/",
+  "display": "browser",
+  "start_url": "https://pwarunfulltrust20180920124043.azurewebsites.net/",
+  "short_name": "SamplePWA",
+  "theme_color": "transparent",
+  "description": "A sample PWA for testing purposes",
+  "orientation": "any",
+  "background_color": "transparent",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": []
+}
